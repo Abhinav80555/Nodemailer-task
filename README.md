@@ -1,12 +1,14 @@
  
 # Nodemailer-nodejs-api
-###Hosted Link
+### Hosted Link
 [https://nodemailr.herokuapp.com/](https://nodemailr.herokuapp.com/)
 
 
 ### API Endpoints
-####Method-post
-#####User Signup
+```
+#### Method-post
+```
+##### User Signup
 https://nodemailr.herokuapp.com/signup
 
 
@@ -19,8 +21,11 @@ https://nodemailr.herokuapp.com/signup
 }
 ```
 
-####Method-post
-#####User Login
+
+```
+#### Method-post
+```
+##### User Login
 https://nodemailr.herokuapp.com/login
 
 `Body`: 
@@ -32,8 +37,11 @@ https://nodemailr.herokuapp.com/login
 ```
 
 
-####Method-post
-#####send Email when authorized
+
+```
+#### Method-post
+```
+##### send Email when authorized
 https://nodemailr.herokuapp.com/mailsend
 
 ` Headers`:
@@ -51,9 +59,11 @@ x-auth-token: JWT token
 
 
 
-####Method-put
+
 ```
-#####user signup
+#### Method-put
+```
+##### user signup
 https://nodemailr.herokuapp.com/forgetpassword
 `Body`: 
 ```
