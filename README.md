@@ -12,7 +12,7 @@ https://nodemailr.herokuapp.com/signup
 Method-post
 ```
 
-`Body`: 
+``Body :``
 ```
 {
     "name": "your name",
@@ -29,7 +29,7 @@ https://nodemailr.herokuapp.com/login
 ```
 Method-post
 ```
-`Body`: 
+``Body :``
 ```
 {
     "email": "example@gmail.com",
@@ -40,17 +40,17 @@ Method-post
 
 
 
-##### 3)send Email when authorized
+##### 3)Send Email when authorized
 https://nodemailr.herokuapp.com/mailsend
 ```
-#### Method-post
+Method-post
 ```
 ` Headers`:
 ```
 x-auth-token: JWT token
 ``` 
 
-`Body`: 
+``Body :``
 ```
 {
     "receiverEmail": "receiver@gmail.com",
@@ -63,13 +63,13 @@ x-auth-token: JWT token
 
 
 
-##### user signup
+##### Password Reset
 https://nodemailr.herokuapp.com/forgetpassword
 ```
-#### Method-put
+Method-put
 ```
 
-`Body`: 
+``Body :``
 ```
 {
     "email": "example@gmail.com",
