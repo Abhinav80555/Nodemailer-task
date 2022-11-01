@@ -5,12 +5,12 @@
 
 
 ### API Endpoints
-```
-#### Method-post
-```
-##### User Signup
-https://nodemailr.herokuapp.com/signup
 
+##### 1)User Signup
+https://nodemailr.herokuapp.com/signup
+```
+Method-post
+```
 
 `Body`: 
 ```
@@ -22,12 +22,13 @@ https://nodemailr.herokuapp.com/signup
 ```
 
 
-```
-#### Method-post
-```
-##### User Login
-https://nodemailr.herokuapp.com/login
 
+
+##### 2)User Login
+https://nodemailr.herokuapp.com/login
+```
+Method-post
+```
 `Body`: 
 ```
 {
@@ -38,12 +39,12 @@ https://nodemailr.herokuapp.com/login
 
 
 
+
+##### 3)send Email when authorized
+https://nodemailr.herokuapp.com/mailsend
 ```
 #### Method-post
 ```
-##### send Email when authorized
-https://nodemailr.herokuapp.com/mailsend
-
 ` Headers`:
 ```
 x-auth-token: JWT token
@@ -57,14 +58,17 @@ x-auth-token: JWT token
     "text": "mail text"
 }
 
+```
 
 
 
+
+##### user signup
+https://nodemailr.herokuapp.com/forgetpassword
 ```
 #### Method-put
 ```
-##### user signup
-https://nodemailr.herokuapp.com/forgetpassword
+
 `Body`: 
 ```
 {
