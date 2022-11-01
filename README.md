@@ -1,74 +1,66 @@
-<!-- 
-# Nodemailer App
-### Environment Variables
-| Name | Description |
-| --- | --- |
-| MONGO_URL | MongoDB Url |
-| PORT | Server Port |
-| JWT_SECRET | JWT secret key for encryption and decryption of token |
-| JWT_EXPIRY | JWT token expiry time |
-| MAIL_HOST | Smtp mail host |
-| MAIL_USERNAME | Smtp mail username |
-| MAIL_PASSWORD | Smtp mail password |
+ 
+# Nodemailer-nodejs-api
+###Hosted Link
+[https://nodemailr.herokuapp.com/](https://nodemailr.herokuapp.com/)
 
 
 ### API Endpoints
-| HTTP Verbs | Endpoints | Action | Required Auth |
-| --- | --- | --- | :---: |
-| GET | api/| Home page | No |
-| POST | api/signup | Create user | No |
-| POST | api/login | Generate token | No |
-| PUT | api/forgetpassword | Generate new password | No |
-| POST | api/mailsend | To send mail to receiver | Yes |
+####Method-post
+#####User Signup
+https://nodemailr.herokuapp.com/signup
 
-
-#### Create User
-`POST /signup`: signup
 
 `Body`: 
 ```
 {
     "name": "your name",
-    "email": "yourname@example.com",
+    "email": "example@gmail.com",
     "password": "your password"
 }
 ```
 
-#### Login
-`POST /login`: Login
+####Method-post
+#####User Login
+https://nodemailr.herokuapp.com/login
 
 `Body`: 
 ```
 {
-    "email": "yourname@example.com",
+    "email": "example@gmail.com",
     "password": "your password"
 }
 ```
 
-#### Reset Password
-`PUT /forgetpassword`: Reset Password
 
-`Body`: 
-```
-{
-    "email": "yourname@example.com",
-}
-```
-
-#### Send Mail
-`POST /mailsend`: Send Mail
-
-`Body`: 
-```
-{
-    "receiverEmail": "receiver_email@example.com",
-    "subject": "mail subject",
-    "text": "mail text"
-}
-```
-
+####Method-post
+#####send Email when authorized
+https://nodemailr.herokuapp.com/mailsend
 
 ` Headers`:
 ```
-access-token: Auth key(JWT token)
-``` -->
+x-auth-token: JWT token
+``` 
+
+`Body`: 
+```
+{
+    "receiverEmail": "receiver@gmail.com",
+    "subject": "mail subject",
+    "text": "mail text"
+}
+
+
+
+####Method-put
+```
+#####user signup
+https://nodemailr.herokuapp.com/forgetpassword
+`Body`: 
+```
+{
+    "email": "example@gmail.com",
+}
+```
+
+
+
