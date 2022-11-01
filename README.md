@@ -4,9 +4,9 @@
 [https://nodemailr.herokuapp.com/](https://nodemailr.herokuapp.com/)
 
 
-### API Endpoints
+# API Endpoints
 
-##### 1)User Signup
+### 1)User Signup
 https://nodemailr.herokuapp.com/signup
 ```
 Method-post
@@ -24,7 +24,7 @@ Method-post
 
 
 
-##### 2)User Login
+### 2)User Login
 https://nodemailr.herokuapp.com/login
 ```
 Method-post
@@ -40,7 +40,7 @@ Method-post
 
 
 
-##### 3)Send Email when authorized
+### 3)Send Email when authorized
 https://nodemailr.herokuapp.com/mailsend
 ```
 Method-post
@@ -63,7 +63,7 @@ x-auth-token: JWT token
 
 
 
-##### 4)Password Reset
+### 4)Password Reset
 https://nodemailr.herokuapp.com/forgetpassword
 ```
 Method-put
