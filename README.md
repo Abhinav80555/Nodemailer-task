@@ -63,7 +63,7 @@ x-auth-token: JWT token
 
 
 
-##### Password Reset
+##### 4)Password Reset
 https://nodemailr.herokuapp.com/forgetpassword
 ```
 Method-put
