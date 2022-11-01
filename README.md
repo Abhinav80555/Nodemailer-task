@@ -1,4 +1,4 @@
-
+<!-- 
 # Nodemailer App
 ### Environment Variables
 | Name | Description |
@@ -71,4 +71,4 @@
 ` Headers`:
 ```
 access-token: Auth key(JWT token)
-```
+``` -->
